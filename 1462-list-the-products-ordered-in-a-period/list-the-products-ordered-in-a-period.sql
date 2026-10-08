@@ -7,4 +7,4 @@ LEFT JOIN Orders
 ON Products.product_id = Orders.product_id
 WHERE year(order_date) = 2020 AND month(order_date) = 2
 GROUP BY Orders.product_id 
-HAVING sum(unit)>99 
+HAVING unit>99 
