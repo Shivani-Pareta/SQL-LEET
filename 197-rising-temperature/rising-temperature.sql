@@ -32,7 +32,7 @@
 -- on w1.recordDate = DATE_ADD(w2.recordDate, INTERVAL 1 DAY)
 -- Where w1.temperature > w2.temperature;
 
-#if you do not know the date functions then you can use interval keyword
+#if you do not know the date functions then you cn use interval keyword
 SELECT w1.id
 FROM Weather w1
 JOIN Weather w2 
