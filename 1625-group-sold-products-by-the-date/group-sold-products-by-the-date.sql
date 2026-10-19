@@ -1,6 +1,5 @@
 
 #TRIAL 1
-
 -- SELECT sell_date,
 --     COUNT(product) AS num_sold,
 --     CONCAT(product) AS products
@@ -11,7 +10,6 @@
 
 
 #TRIAL 2
-
 -- SELECT sell_date,
 --     COUNT(product) AS num_sold,
 --     GROUP_CONCAT(DISTINCT product) AS products
