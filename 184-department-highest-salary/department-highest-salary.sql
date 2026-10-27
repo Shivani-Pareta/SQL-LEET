@@ -1,19 +1,6 @@
--- # Write your MySQL query statement below
--- select  Department, Employee,Salary 
--- from(
---     select
---         d.name as Department,
---         e.name as Employee,
---         e.salary,
---         dense_rank() over(partition by d.name order by e.salary desc) as rnk,
---         max(e.salary) over(partition by d.name) as max_DepartmentSalary
---     from Employee e
---     join Department d
---     on e.departmentId = d.id
--- ) as HighestEarningEmployees
--- where rnk = 1
-
-with HighestEarningEmployees as (
+# Write your MySQL query statement below
+select  Department, Employee,Salary 
+from(
     select
         d.name as Department,
         e.name as Employee,
@@ -23,9 +10,22 @@ with HighestEarningEmployees as (
     from Employee e
     join Department d
     on e.departmentId = d.id
-)
+) as HighestEarningEmployees
+where rnk = 1
+
+-- with HighestEarningEmployees as (
+--     select
+--         d.name as Department,
+--         e.name as Employee,
+--         e.salary,
+--         dense_rank() over(partition by d.name order by e.salary desc) as rnk,
+--         max(e.salary) over(partition by d.name) as max_DepartmentSalary
+--     from Employee e
+--     join Department d
+--     on e.departmentId = d.id
+-- )
     
 
-Select Department,Employee, Salary
-From HighestEarningEmployees
-Where rnk = 1
+-- Select Department,Employee, Salary
+-- From HighestEarningEmployees
+-- Where rnk = 1
