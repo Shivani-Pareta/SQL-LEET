@@ -23,4 +23,4 @@ Solutions in this repository are automatically committed and synced upon success
 ## 📬 Connect
 
 * **LinkedIn:** [shivani-pareta](https://www.linkedin.com/in/shivani-pareta/)
-* **GitHub:** [@ShivaniPareta-BA](https://github.com/Shivani-Pareta)
+* **GitHub:** [ShivaniPareta](https://github.com/Shivani-Pareta)
