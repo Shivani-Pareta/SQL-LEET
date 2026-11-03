@@ -5,7 +5,7 @@ select
       (
         count(distinct r.user_id)
          /
-        (select count(user_id) from Users)
+        (select count(*) from Users)
       
       ) * 100, 2) as percentage
 from Register r
